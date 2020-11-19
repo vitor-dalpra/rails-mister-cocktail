@@ -5,6 +5,6 @@ class Ingredient < ApplicationRecord
   validates :name, uniqueness: true
 
   def sort
-    reviews.sort
+    ingredients.sort
   end
 end
