@@ -13,7 +13,7 @@
   <%= link_to 'Add Dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
   <%= link_to 'Back', cocktails_path, class: 'btn btn-primary' %>
   <%= link_to "Delete ",
-              dose_path(@dose),
+              dose_path(@cocktail.doses),
               method: :delete,
               data: { confirm: "Are you sure?" } %>
 
