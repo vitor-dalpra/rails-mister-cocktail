@@ -3,13 +3,13 @@
     <%= @cocktail.name %>
   </h2>
 
-  <p><strong>Doses:</strong></p>
-  <ol>
+  <p><strong>Ingredients:</strong></p>
+  <ul>
     <% @cocktail.doses.each do |dose| %>
-      <li><%= dose.content %> | <%= dose.ingredient %></li>
+      <li><%= dose.ingredient.name %> | <%= dose.description %> </li>
     <% end %>
-  </ol>
+  </ul>
 </p>
   <%= link_to 'Add Dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
-  <%= link_to 'Back', cocktail_path, class: 'btn btn-primary' %>
+  <%= link_to 'Back', cocktails_path, class: 'btn btn-primary' %>
 </div>

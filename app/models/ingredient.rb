@@ -3,4 +3,8 @@ class Ingredient < ApplicationRecord
 
   validates :name, presence: true
   validates :name, uniqueness: true
+
+  def sort
+    reviews.sort
+  end
 end
