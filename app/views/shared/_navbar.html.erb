@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: ;">
-  <a class="navbar-brand" href="#" style="color: ;">Rabo d'Galo</a>
+<div class="navbar navbar-expand-sm navbar-light" style="background-color:#227A56 ;">
+  <%= link_to "Rab d'Galo", cocktails_path, class: 'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color: ;">Home <span class="sr-only">(current)</span></a>
+        <%= link_to "Home", cocktails_path, class: 'nav-link' %>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" style="color: ;">Ingredients</a>
@@ -16,10 +16,4 @@
       </li>
     </ul>
   </div>
-</nav>
-
-
-
-
-
-
+</div>
