@@ -1,16 +1,12 @@
 <div class="container-xl">
-  <h1 class="p-3 ">RaboDeGalo.com</h1>
     <div class="row row-cols-1 row-cols-md-3">
       <% @cocktails.each do |cocktail| %>
       <div class="col mb-4">
-        <div class="card" style="background-image: url('https://source.unsplash.com/500x400/?<%=cocktail.name%>');">
+        <div class="card-index" style="background-image: url('https://source.unsplash.com/500x400/?<%=cocktail.name%>');">
           <%= link_to cocktail.name, cocktail_path(cocktail), class: '' %>
         </div>
       </div>
       <% end %>
     </div>
   <br>
-
 </div>
-
-
